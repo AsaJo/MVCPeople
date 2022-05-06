@@ -1,0 +1,12 @@
+﻿@model Person
+
+
+<div class="row">
+    <div class="col-4">@Model.Name</div>
+    <div class="col-4 mt-2">@Model.PhoneNumber </div>
+    <div class="col-2 mt-2">@Model.City </div>
+
+
+    <button class="col-2 btn btn-dark">@Html.ActionLink("Details", "Details", "People", new { id = Model.PersonId })</button>
+
+</div>
